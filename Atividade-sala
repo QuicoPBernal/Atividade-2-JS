@@ -71,3 +71,54 @@ if (letra == `a` || letra == `e` || letra == `i` || letra == `o` || letra == `u`
 else{
   console.log(`A letra é uma consoante`)
 }
+
+
+// Atividade 05
+// Crie um programa que solicite um número de 1 a 7, representando
+// o dia da semana. Use uma estrutura switch (ou equivalente) para
+// imprimir o nome do dia correspondente.
+var dia = prompt(`Digite um número de 1 a 7:`)
+switch (dia){
+  case `1`:
+    console.log(`Domingo`)
+    break
+  case `2`:
+    console.log(`Segunda-feira`)
+    break
+  case `3`:
+    console.log(`Terça-feira`)
+    break
+  case `4`:
+    console.log(`Quarta-feira`)
+    break
+  case `5`:
+    console.log(`Quinta-feira`)
+    break
+  case `6`:
+    console.log(`Sexta-feira`)
+    break
+  case `7`:
+    console.log(`Sábado`)
+    break
+  default:
+    console.log(`Número inválido`)
+}
+
+
+// Atividade 06
+// Escreva um programa que solicite um número e determine se ele é
+// um número primo.
+var num = prompt(`Digite um número:`)
+var divisores = 0
+for (var i = 1; i <= num; i++){
+  if (num % i == 0){
+    divisores++
+  }
+}
+if (divisores == 2){
+  console.log(`O número é primo`)
+}
+else{
+  console.log(`O número não é primo`)
+}
+
