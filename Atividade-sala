@@ -40,3 +40,34 @@ else if (imc >= 35 && imc <= 40){
 else {
   console.log(`Obesidade grau III`)
 }
+
+
+// Atividade 03
+// Peça ao usuário para inserir o preço de um produto e sua idade. E calcule o
+// preço final com desconto, Se o usuário tiver menos de 18 anos, aplique um
+// desconto de 10%. Se o usuário tiver 18 anos ou mais, não aplique desconto.
+
+var preco = prompt(`Digite o preço do produto:`)
+var idade = prompt(`Digite sua idade:`)
+if (idade < 18){
+  var desconto = preco * 0.1
+  var precoFinal = preco - desconto
+  console.log(`O preço final com desconto é ${precoFinal}`)
+}
+else{
+  console.log(`O preço final é ${preco}`)
+}
+
+
+// Atividade 04
+// Solicite ao usuário que digite uma letra. Crie um programa que determine
+// se a letra inserida é uma vogal ou uma consoante. Exiba a mensagem
+// correspondente. Utilize estruturas condicionais para realizar essa
+// verificação.
+var letra = prompt(`Digite uma letra:`)
+if (letra == `a` || letra == `e` || letra == `i` || letra == `o` || letra == `u`){
+  console.log(`A letra é uma vogal`)
+}
+else{
+  console.log(`A letra é uma consoante`)
+}
